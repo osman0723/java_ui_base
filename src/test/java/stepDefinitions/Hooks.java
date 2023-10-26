@@ -6,9 +6,6 @@ import org.junit.After;
 import org.junit.Before;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-
-import java.sql.Timestamp;
-
 import static driver.DriverFactory.cleanupDriver;
 import static driver.DriverFactory.getDriver;
 

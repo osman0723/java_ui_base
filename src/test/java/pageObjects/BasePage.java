@@ -14,9 +14,7 @@ import java.time.Duration;
 
 public class BasePage {
         public BasePage(){
-        PageFactory.initElements(getDriver(), this);
-
-    }
+        PageFactory.initElements(getDriver(), this);}
         public WebDriver getDriver(){
     return DriverFactory.getDriver();
     }
@@ -40,9 +38,4 @@ public class BasePage {
           String currentUrl = getDriver().getCurrentUrl();
           Assert.assertEquals(currentUrl, expectedUrl);
     }
-
-
-
-
-
 }

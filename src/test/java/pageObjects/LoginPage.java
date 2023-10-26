@@ -27,9 +27,4 @@ public class LoginPage extends BasePage{
     public void verify_inventory(){
         verifyUrl(inventory_pageURL);
     }
-
-
-
-
-
 }
