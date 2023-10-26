@@ -7,3 +7,8 @@ Feature: login page
     And fill_in password
     And click login button
     Then verify inventory page
+
+  @tag
+    Scenario: example
+      Given visit homepage
+      When fill_in username
