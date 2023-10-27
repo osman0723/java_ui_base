@@ -1,13 +1,12 @@
-package pageObjects;
+package pages;
 
 import driver.DriverFactory;
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
-import utils.ConfigReader;
 import utils.GlobalVars;
 
 import java.time.Duration;

@@ -1,4 +1,4 @@
-package pageObjects;
+package pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,9 +12,7 @@ public class LoginPage extends BasePage{
     private @FindBy(id = "login-button") WebElement loginButton_textField;
     public final String inventory_pageURL = "https://www.saucedemo.com/inventory.html";
 
-    public void visit_homepage(){
-        navigateTo_URL(GlobalVars.SAUCEDEMO_HOMEPAGE);
-    }
+
     public void fill_username(){
         sendKeys(username_textField, "standard_user");
     }

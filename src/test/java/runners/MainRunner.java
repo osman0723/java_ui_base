@@ -1,17 +1,19 @@
 package runners;
 
-import io.cucumber.testng.AbstractTestNGCucumberTests;
-import io.cucumber.testng.CucumberOptions;
-import org.testng.annotations.DataProvider;
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import org.junit.runner.RunWith;
 
-@CucumberOptions(features = {"classpath:features"}, glue = {"stepDefinitions"},
-        tags = "@tag", monochrome = true, dryRun = false,
-        plugin = {"pretty", "html:target/cucumber", "json:target/cucumber.json"})
+@CucumberOptions(
+        features = "src/test/resources/features",
+        glue = "stepDefinitions",
+        tags = "@tag",
+        monochrome = true,
+        dryRun = false,
+        plugin = {"pretty", "html:target/cucumber", "json:target/cucumber.json"}
+        )
 
-public class MainRunner extends AbstractTestNGCucumberTests {
-    @Override
-    @DataProvider(parallel = false)
-    public Object[][] scenarios(){
-        return super.scenarios();
-    }
+@RunWith(Cucumber.class)
+public class MainRunner{
+
 }
