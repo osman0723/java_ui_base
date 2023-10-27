@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.LoginPage;
 
@@ -17,5 +18,6 @@ public class LoginSteps {
     public void click_login_button() {
         loginPage.click_loginButton();
     }
-
+    @Then("verify inventory page")
+    public void verifyInventoryPage() {loginPage.verify_inventory();}
 }

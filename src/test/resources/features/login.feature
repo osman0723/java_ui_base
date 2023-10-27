@@ -1,6 +1,6 @@
 Feature: login page
 
-  @tag
+  @smoke
   Scenario: login saucedome web page
     Given visit homepage
     When fill_in username
